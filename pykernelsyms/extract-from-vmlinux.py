@@ -9,6 +9,10 @@ Usage:
 python extract-from-vmlinux.py <vmlinux_file>
 """
 
+ErrExecErr = """
+extract-from-vmlinux.py: executed program returned next error:
+"""
+
 ErrObjdumpErr = """
 extract-from-vmlinux.py: objdump returned next error:
 """
@@ -39,20 +43,52 @@ def getInputFileName():
         raise Exception(Usage)
     return sys.argv[1]
 
+def getOutput(command):
+    proc = subprocess.Popen(shlex.split(command), stdout = subprocess.PIPE, stderr = subprocess.PIPE)
+    output = proc.stdout.read()
+    err = proc.stderr.read()
+    if proc.wait():
+        raise Exception(ErrExecErr + err)
+    return output
+
+def isValidElf():
+    fileCmd = 'file -b ' + getInputFileName()
+    fileOutput = getOutput(fileCmd)
+    if re.match("ELF 32-bit LSB", fileOutput) is not None:
+        return "32-bit"
+    if re.match("ELF 64-bit LSB", fileOutput) is not None:
+        return "64-bit"
+    else:
+        raise Exception("Elf file format unrecognized")
+
+elfType = isValidElf()
+
+def is32Bit():
+    return elfType == "32-bit"
+
+def is64Bit():
+    return elfType == "64-bit"
+
 def rawReadSection(sectionName):
     objdumpCmd = 'objdump -j ' + sectionName +' -s ' + getInputFileName()
-    objdumpProcess = subprocess.Popen(shlex.split(objdumpCmd), stdout = subprocess.PIPE, stderr=subprocess.PIPE)
-    objdumpOutput = objdumpProcess.stdout.read()
-    objdumpErr = objdumpProcess.stderr.read()
-    if objdumpProcess.wait() != 0:
-        raise Exception(ErrObjdumpErr + objdumpErr)
-    return objdumpOutput
+    return getOutput(objdumpCmd)
 
 def invertHex(hex):
-    return hex[6:8] + hex[4:6] + hex[2:4] + hex[0:2]
+    if is32Bit():
+        return hex[6:8] + hex[4:6] + hex[2:4] + hex[0:2]
+    if is64Bit():
+        return hex[14:16] + hex[12:14] + hex[10:12] + hex[8:10] + hex[6:8] + hex[4:6] + hex[2:4] + hex[0:2]
+    else:
+        return None
 
 def validHex(hex):
-    return len(hex) == 8 and re.match('^[0-9abcdef]*$', hex)
+    if is32Bit():
+        return len(hex) == 8 and re.match('^[0-9abcdef]*$', hex)
+    if is64Bit():
+        return len(hex) == 16 and re.match('^[0-9abcdef]*$', hex)
+    else:
+        return None
+
 
 def hexToInt(hex):
     result = 0
@@ -62,6 +98,7 @@ def hexToInt(hex):
 
 def hexToChar(hex):
     isFirst = True
+    tempInt = 0
     result = ''
     for char in hex:
         if isFirst:
@@ -72,6 +109,40 @@ def hexToChar(hex):
             result += chr(tempInt)
             isFirst = True
     return result
+
+def extractHexValues(objString):
+    result = []
+
+    if is32Bit():
+        stringValues = re.sub(' ', '', objString[10:45])
+        if len(stringValues) >= 8:
+            result.append(invertHex(stringValues[0:8]))
+        if len(stringValues) >=16:
+            result.append(invertHex(stringValues[8:16]))
+        if len(stringValues) >= 24:
+            result.append(invertHex(stringValues[16:24]))
+        if len (stringValues) >= 32:
+            result.append(invertHex(stringValues[24:32]))
+        
+    elif is64Bit():
+        stringValues = re.sub(' ', '', objString [18:53])
+        if len(stringValues) >= 16:
+            result.append(invertHex(stringValues[0:16]))
+        if len(stringValues) >= 32:
+            result.append(invertHex(stringValues[16:32]))
+
+    else:
+        result = None
+
+    return result
+
+def extractString(objString):
+    if is32Bit():
+        return re.sub(' ', '', objString[10:45])
+    elif is64Bit():
+        return re.sub(' ', '', objString[18:53])
+    else:
+        return None
 
 def getSymTab():
     symTab = []
@@ -84,18 +155,16 @@ def getSymTab():
         crcStrings = re.split('\n', rawReadSection(crcSection))[4:-1]
 
         for objString in symStrings:
-            hexValues = re.split('[ ]+', objString)
-            if len(hexValues) >=4:
-                if validHex(hexValues[2]) and validHex(hexValues[3]):
-                    symTab.append((invertHex(hexValues[2]), invertHex(hexValues[3])))
-            if len(hexValues) >= 6:
-                if validHex(hexValues[4]) and validHex(hexValues[5]):
-                    symTab.append((invertHex(hexValues[4]), invertHex(hexValues[5])))
+            hexValues = extractHexValues(objString)
+            if len(hexValues) >= 2:
+                symTab.append((hexValues[0], hexValues[1]))
+            if len(hexValues) >= 4:
+                symTab.append((hexValues[2], hexValues[3]))
 
         for objString in crcStrings:
-            hexValues = re.split('[ ]+', objString)
-            for x in xrange(2,6):
-                if j < len(symTab) and len(hexValues) >= x + 1 and validHex(hexValues[x]):
+            hexValues = extractHexValues(objString)
+            for x in xrange(0, len(hexValues)):
+                if j < len(symTab) and len(hexValues):
                     symCrcTab.append((symTab[j][0], symTab[j][1], invertHex(hexValues[x]), symSection))
                     j += 1
 
@@ -106,7 +175,7 @@ def getStrings():
     rawStrings = re.split('\n', rawReadSection(stringSection))[4:-1]
     initAddress = re.split('[ ]+', rawStrings[0])[1]
     for objString in rawStrings:
-        finalString += re.sub(' ', '', objString[10:45])
+        finalString += extractString(objString)
     return initAddress, hexToChar(finalString)
 
 def getSymbolsWithNames():

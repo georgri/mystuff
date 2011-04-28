@@ -3,7 +3,7 @@
 VMLINUX_FILE="/tmp/vmlinux"
 
 if [ ! -f "$1" ]; then
-	echo "Usage: extract-from-vmlinz.sh <vmlinuz_file>"
+	echo "Usage: extract-from-vmlinuz.sh <vmlinuz_file>"
 	exit 1
 fi
 
