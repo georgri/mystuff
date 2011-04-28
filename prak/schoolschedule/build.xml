@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="tvprogram" basedir="." default="usage">
+    <property file="build.properties"/>
+	
+    <property name="src.dir" value="src"/>
+    <property name="web.dir" value="war"/>
+    <property name="build.dir" value="${web.dir}/WEB-INF/classes"/>
+    <property name="name" value="tvprogram"/>
+
+	<property name="log4j" location="${web.dir}/WEB-INF/lib/log4j-1.2.15.jar" />
+
+    <path id="master-classpath">
+        <fileset dir="${web.dir}/WEB-INF/lib">
+            <include name="*.jar"/>
+        </fileset>
+        <pathelement path="${build.dir}"/>
+    </path>
+
+    <target name="usage">
+        <echo message=""/>
+        <echo message="${name} build file"/>
+        <echo message="-----------------------------------"/>
+        <echo message=""/>
+        <echo message="Available targets are:"/>
+        <echo message=""/>
+        <echo message="build        --> Build the application"/>
+        <echo message="deploy       --> Deploy application as directory"/>
+        <echo message="deploywar    --> Deploy application as a WAR file"/>
+        <echo message="buildtests   --> Compile test tree java files"/>
+        <echo message="tests        --> Execute tests, except for DB ones"/>
+    	<echo message="dbtests      --> Execute DB tests"/>
+        <echo message="clean        --> Clean output directories"/>
+    	<echo message="undeploy     --> Delete the WAR file deployed"/>
+    	<echo message="createtables --> Create DB tables used"/>
+    	<echo message="droptables   --> Drop DB tables"/>
+    	<echo message="loaddata     --> Load DB tables with data"/>
+    	<echo message="printdata    --> Print data from DB"/>
+        <echo message="cleardata    --> Delete data from DB"/>
+        <echo message=""/>
+    </target>
+
+    <target name="build" description="Compile main source tree java files">
+        <mkdir dir="${build.dir}"/>
+        <javac destdir="${build.dir}" source="1.5" target="1.5" debug="true"
+               deprecation="false" optimize="false" failonerror="true">
+            <src path="${src.dir}"/>
+            <classpath refid="master-classpath"/>
+        </javac>
+    </target>
+
+    <target name="deploy" depends="build" description="Deploy application">
+        <copy todir="${deploy.path}/${name}" preservelastmodified="true">
+            <fileset dir="${web.dir}">
+                <include name="**/*.*"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="deploywar" depends="build" description="Deploy application as a WAR file">
+        <war destfile="${name}.war"
+             webxml="${web.dir}/WEB-INF/web.xml">
+            <fileset dir="${web.dir}">
+                <include name="**/*.*"/>
+            </fileset>
+        </war>
+        <copy todir="${deploy.path}" preservelastmodified="true">
+            <fileset dir=".">
+                <include name="*.war"/>
+            </fileset>
+        </copy>
+    </target>
+    
+    <property name="test.dir" value="test"/>
+  
+    <path id="test-classpath">
+        <fileset dir="${web.dir}/WEB-INF/lib">
+            <include name="*.jar"/>
+        </fileset>
+        <pathelement path="${build.dir}"/>
+        <pathelement path="${test.dir}"/>
+        <pathelement path="${web.dir}/WEB-INF/classes"/>
+    </path>
+        
+    <target name="buildtests" description="Compile test tree java files">
+        <mkdir dir="${build.dir}"/>
+        <javac destdir="${build.dir}" source="1.5" target="1.5" debug="true"
+            deprecation="false" optimize="false" failonerror="true">
+            <src path="${test.dir}"/>
+            <classpath refid="master-classpath"/>
+        </javac>
+    </target>
+  
+    <target name="tests" depends="build, buildtests" description="Run tests">
+ 	    <taskdef resource="testngtasks" classpath="${web.dir}/WEB-INF/lib/testng-5.11-jdk15.jar"/>
+
+	    <testng workingdir="${test.dir}" 
+	    	    haltonfailure="false"
+	    	    failureproperty="tests.failed"
+	    	    verbose="2">
+	        <classpath>
+	            <path refid="test-classpath"/>
+	        </classpath>
+	    	<classfileset dir="${build.dir}" includes="**/*.class" excludes="**/*DB*.class"/>
+	    </testng>
+        
+        <fail if="tests.failed">
+            tests.failed=${tests.failed}
+            ***********************************************************
+            ****  One or more tests failed!  Check the output ...  ****
+            ***********************************************************
+        </fail>
+    </target>
+
+	<!-- <jvmarg value="-Dfile.encoding=UTF-8" /> -->
+	<!-- ,droptables,createtables,loaddata -->
+    <target name="dbtests" depends="build, buildtests" 
+            description="Run db tests">
+    	<taskdef resource="testngtasks" classpath="${web.dir}/WEB-INF/lib/testng-5.11-jdk15.jar"/>
+    	<testng workingdir="${test.dir}" 
+    		    haltonfailure="false"
+    		    failureproperty="tests.failed"
+    		    verbose="2">
+    	    <classpath>
+    		   <path refid="test-classpath"/>
+    		</classpath>
+    		<classfileset dir="${build.dir}" includes="**/*DB*.class"/>
+    		<jvmarg value="-Dfile.encoding=UTF-8" />
+        </testng>
+        
+        <fail if="tests.failed">
+            tests.failed=${tests.failed}
+            ***********************************************************
+            ****  One or more tests failed!  Check the output ...  ****
+            ***********************************************************
+        </fail>
+    </target>
+
+
+  <target name="clean" description="Clean output directories">
+        <delete>
+            <fileset dir="${build.dir}">
+                <include name="**/*.class"/>
+            </fileset>
+        </delete>
+    </target>
+
+    <target name="undeploy" description="Un-Deploy application">
+        <delete>
+            <fileset dir="${deploy.path}">
+                <include name="${name}.war"/>
+            </fileset>
+        </delete>
+    </target>
+  
+  <target name="createtables" description="Create DB tables">
+        <echo message="CREATE TABLES USING: ${db.driver} ${db.url}"/>
+        <sql driver="${db.driver}"
+             url="${db.url}"
+             userid="${db.user}"
+             password="${db.pw}"
+             onerror="continue"
+             src="db/create_db_hsqldb.sql">  
+            <classpath refid="master-classpath"/>
+        </sql> 
+    </target>
+
+    <target name="droptables" description="Drop DB tables">
+        <echo message="DROP TABLES USING: ${db.driver} ${db.url}"/>
+        <sql driver="${db.driver}"
+             url="${db.url}"
+             userid="${db.user}"
+             password="${db.pw}"
+             onerror="continue">  
+            <classpath refid="master-classpath"/>
+
+        DROP TABLE tvprogram.channel;
+        DROP TABLE tvprogram.program;
+
+        </sql> 
+    </target>
+
+    <target name="loaddata" description="Load DB data">
+        <echo message="LOAD DATA USING: ${db.driver} ${db.url}"/>
+        <sql driver="${db.driver}"
+             url="${db.url}"
+             userid="${db.user}"
+             password="${db.pw}"
+             onerror="continue"
+             src="db/load_data.sql">  
+            <classpath refid="master-classpath"/>
+        </sql> 
+    </target>
+
+    <target name="printdata" description="Print DB data">
+        <echo message="PRINT DATA USING: ${db.driver} ${db.url}"/>
+        <sql driver="${db.driver}"
+             url="${db.url}"
+             userid="${db.user}"
+             password="${db.pw}"
+             onerror="continue"
+             print="true">  
+            <classpath refid="master-classpath"/>
+
+        SELECT * FROM tvprogram.channel;
+        SELECT * FROM tvprogram.program;
+
+        </sql> 
+    </target>
+
+    <target name="cleardata" description="Delete DB data">
+        <echo message="CLEAR DATA USING: ${db.driver} ${db.url}"/>
+        <sql driver="${db.driver}"
+             url="${db.url}"
+             userid="${db.user}"
+             password="${db.pw}"
+             onerror="continue">  
+            <classpath refid="master-classpath"/>
+
+        DELETE FROM tvprogram.channel;
+        DELETE FROM tvprogram.program;
+
+        </sql> 
+    </target>
+
+    <target name="shutdowndb" description="Shutdown DB server">
+        <echo message="SHUT DOWN DATABASE USING: ${db.driver} ${db.url}"/>
+        <sql driver="${db.driver}"
+             url="${db.url}"
+             userid="${db.user}"
+             password="${db.pw}"
+             onerror="continue">  
+            <classpath refid="master-classpath"/>
+
+        SHUTDOWN;
+
+        </sql> 
+    </target>
+</project>

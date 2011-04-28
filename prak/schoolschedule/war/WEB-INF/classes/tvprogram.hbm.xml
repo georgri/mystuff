@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping schema="tvprogram" package="schoolschedule.domain">
+  <class name="Channel" table="channel">
+    <id name="id" column="chid" type="int">
+      <generator class="identity"/>
+    </id>
+    <property name="Title" column="chtitle" type="string"/>
+    <property name="Logo" column="logo" type="string"/>
+    <set name="Programs" inverse="true" lazy="true">
+      <key column="channelid"/>
+      <one-to-many class="Program"/>
+    </set>
+  </class>
+  <class name="Program" table="program">
+    <id name="id" column="pid" type="int">
+      <generator class="identity"/>
+    </id>
+    <property name="Title" column="ptitle" type="string"/>
+    <property name="Kind" column="kind" type="string"/>
+    <property name="Time" column="ptime" type="timestamp"/>
+    <property name="Duration" column="duration" type="int"/>
+    <property name="Reccurence" column="reccurence" type="int"/>
+    <many-to-one name="Channel" class="Channel" column="chid"/>
+  </class>
+</hibernate-mapping>

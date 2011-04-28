@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping schema="schoolschedule" package="schoolschedule.domain">
+	<class name="Student" table="student">
+		<id name="id" column="id" type="int">
+			<generator class="identity"/>
+		</id>
+		<property name="FirstName" column="firstname" type="string"/>
+		<property name="MiddleName" column="middlename" type="string"/>
+		<property name="LastName" column="lastname" type="string"/>
+		<property name="Course" column="course" type="short"/>
+		<property name="Stream" column="stream" type="short"/>
+		<property name="Group" column="group" type="short"/>
+		
+		<set name="Lessons" inverse="true" lazy="true">
+			<key column="studentid"/>
+			<many-to-many class="Lesson" column="lessonid"/>
+		</set>
+		
+		<set name="Courses" inverse="true" lazy="true">
+			<key column="studentid"/>
+			<many-to-many class="Course" column="courseid"/>
+		</set>		
+	</class>
+	
+	<class name="Course" table="course">
+		<id name="id" column="id" type="int">
+			<generator class="identity"/>
+		</id>
+		<property name="Title" column="title" type="string"/>
+		<property name="Scope" column="scope" type="short"/>
+		<property name="Intensity" column="intensity" type="int"/>
+		<property name="Year" column="year" type="short"/>
+		
+		<set name="Students" inverse="true" lazy="true">
+			<key column="courseid"/>
+			<many-to-many class="Student" column="studentid"/>
+		</set>		
+		
+		<set name="Professors" inverse="true" lazy="true">
+			<key column="courseid"/>
+			<many-to-many class="Professor" column="professorid"/>
+		</set>					
+	</class>
+	
+	<class name="Lesson" table="lesson">
+		<id name="id" column="id" type="int">
+			<generator class="identity"/>
+		</id>
+		<property name="CourseId" column="courseid" type="int"/>
+		<property name="ProfessorId" column="professorId" type="int"/>
+		<property name="AudienceId" column="audienceId" type="int"/>
+		<property name="Time" column="time" type="timestamp"/>
+		
+		<set name="Students" inverse="true" lazy="true">
+			<key column="lessonid"/>
+			<many-to-many class="Student" column="studentid"/>
+		</set>						
+	</class>	
+	
+	
+	<class name="Professor" table="professor">
+		<id name="id" column="id" type="int">
+			<generator class="identity"/>
+		</id>
+		<property name="FirstName" column="firstname" type="string"/>
+		<property name="MiddleName" column="middlename" type="string"/>
+		<property name="LastName" column="lastname" type="string"/>
+		
+		<set name="Courses" inverse="true" lazy="true">
+			<key column="professorid"/>
+			<many-to-many class="Course" column="courseid"/>
+		</set>						
+	</class>	
+	
+	<class name="Audience" table="audience">
+		<id name="id" column="id" type="int">
+			<generator class="identity"/>
+		</id>
+		<property name="Number" column="number" type="int"/>
+		<property name="Capacity" column="capacity" type="int"/>		
+	</class>	
+</hibernate-mapping>

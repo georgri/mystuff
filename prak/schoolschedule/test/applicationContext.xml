@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:aop="http://www.springframework.org/schema/aop"
+         xmlns:tx="http://www.springframework.org/schema/tx"
+         xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/aop 
+           http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx 
+           http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+
+    <!-- the parent application context definition for the springapp application -->
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <!-- <property name="useUnicode" value="true"/>  
+        <property name="charset" value="UTF-8"/>
+        <property name="characterEncoding" value="UTF-8"/> -->
+    </bean>
+    
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+      <property name="dataSource" ref="dataSource" />
+      <property name="mappingResources">
+        <list>
+          <value>tvprogram.hbm.xml</value>
+        </list>
+      </property>
+      <property name="hibernateProperties">
+        <value>
+          hibernate.dialect=${hibernate.dialect}
+          hibernate.show_sql=true<!-- org.hibernate.dialect.HSQLDialect
+          org.hibernate.dialect.SQLServerDialect
+          hibernate.connection.useUnicode=true
+          hibernate.connection.charSet=UTF-8
+          hibernate.connection.characterEncoding=UTF-8 -->
+      </value>
+      </property>
+    </bean>    
+    
+    <bean id="programManager" class="schoolschedule.service.ProgramManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="propertyConfigurer" 
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:jdbc.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <aop:config>
+        <aop:advisor pointcut="execution(* *..ProgramManager.*(..))" advice-ref="txAdvice"/>
+    </aop:config>
+
+    <tx:advice id="txAdvice">
+        <tx:attributes>
+            <tx:method name="save*"/>
+            <tx:method name="*" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+</beans>
