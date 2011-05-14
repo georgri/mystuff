@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+
+<project name="theatres" basedir="." default="usage">
+
+	<property name="name" value="theatres"/>
+
+	<property name="war.dir" value="war"/>
+	<property name="src.dir" value="src"/>
+	<property name="build.dir" value=".classes"/>
+	<property name="docs.dir" value="${war.dir}/docs"/>
+	<property name="webclasses.dir" value="${war.dir}/WEB-INF/classes"/>
+	<property name="weblib.dir" value="${war.dir}/WEB-INF/lib"/>
+	<property name="dist.dir" value="dist"/>
+	<property name="db.dir" value="db"/>
+
+	<property name="testsrc.dir" value="test"/>
+	<property name="testbuild.dir" value=".testclasses"/>
+	<property name="testreports.dir" value="junit-reports"/>
+	<property name="testhtml.dir" value="${testreports.dir}/html"/>
+
+	<property name="domain.classes" value="org/springframework/samples/theatres/*.class"/>
+	<!-- <property name="spring.root" value="../.."/> 
+	<property name="tomcat.context" value="tomcat/META-INF"/> -->
+
+	<property file="build.properties"/>
+
+	<path id="master-classpath">
+		<fileset dir="${weblib.dir}">
+			<include name="aspectjweaver.jar"/>
+			<include name="hibernate3.jar"/>
+			<include name="persistence.jar"/>
+			<include name="servlet-api.jar"/>
+			<include name="commons-logging.jar"/>
+			<include name="toplink-essentials.jar"/>
+			<include name="*springframework*.jar"/>
+		</fileset>
+	</path>
+
+	<path id="build-classpath">
+		<!-- Only link toplink-api.jar in for building -->
+		<fileset dir="${weblib.dir}">
+			<include name="toplink-api.jar"/>
+		</fileset>
+	</path>
+
+	<path id="test-classpath">
+		<fileset dir="${db.dir}/mysql">
+			<include name="mysql*.jar"/>
+		</fileset>
+		<fileset dir="${weblib.dir}">
+			<include name="aopalliance*.jar"/>
+			<include name="commons*.jar"/>
+			<include name="junit*.jar"/>
+			<include name="antlr*.jar"/>
+			<include name="cglib*.jar"/>
+			<include name="dom4j*.jar"/>
+			<include name="ehcache*.jar"/>
+			<include name="hibernate-entitymanager.jar"/>
+			<include name="hibernate-annotations.jar"/>
+			<include name="hibernate-commons-annotations.jar"/>
+			<include name="hsqldb.jar"/>
+			<!-- connector.jar only needed for OpenJPA -->
+			<include name="connector.jar"/>
+			<!-- jta.jar only needed for Hibernate -->
+			<include name="jta.jar"/>
+			<include name="javassist*.jar"/>
+			<include name="log4j*.jar"/>
+			<include name="openjpa*.jar"/>
+			<!-- Serp only needed for OpenJPA -->
+			<include name="serp*.jar"/>
+			<!-- SLF4J only needed for Hibernate -->
+			<include name="slf4j*.jar"/>
+            <include name="eclipselink.jar"/>
+			<include name="toplink-essentials.jar"/>
+		</fileset>
+	</path>
+
+
+	<target name="usage">
+		<echo message=""/>
+		<echo message="Theatres build file"/>
+		<echo message="------------------------------------------------------"/>
+		<echo message=""/>
+		<echo message="Available targets are:"/>
+		<echo message=""/>
+		<echo message="clean     --> Clean output dirs"/>
+		<echo message="build     --> Compile main Java sources and copy libraries"/>
+		<echo message="docs      --> Create complete Javadoc documentation"/>
+		<echo message="warfile   --> Build the web application archive"/>
+		<echo message="deploywar --> Deploy the web application archive"/>
+		<echo message="setupDB   --> Initialize the database"/>
+		<echo message="tests     --> Run tests using initialized database"/>
+		<echo message="all       --> Clean, build, docs, warfile, tests"/>
+		<echo message=""/>
+	</target>
+
+
+	<target name="clean" description="Clean output dirs (build, docs, testbuild, testreports, weblib, dist)">
+		<delete dir="${build.dir}"/>
+		<delete dir="${docs.dir}"/>
+		<delete>
+			<fileset dir="${webclasses.dir}">
+				<include name="*.hbm.xml"/>
+				<include name="jdbc.properties"/>
+			</fileset>
+		</delete>
+		<delete dir="${testbuild.dir}"/>
+		<delete dir="${testreports.dir}"/>
+		<delete dir="${dist.dir}"/>
+	</target>
+
+
+	<target name="build" description="Compile main source tree java files into class files, generate jar files">
+
+		<mkdir dir="${build.dir}"/>
+		<mkdir dir="${weblib.dir}"/>
+
+		<javac destdir="${build.dir}" source="1.5" target="1.5"
+				debug="true" deprecation="false" optimize="false" failonerror="true">
+			<src path="${src.dir}"/>
+			<classpath refid="master-classpath"/>
+			<classpath refid="build-classpath"/>
+		</javac>
+
+		<copy todir="${webclasses.dir}" preservelastmodified="true">
+			<fileset dir="${src.dir}">
+				<include name="*.hbm.xml"/>
+				<include name="jdbc.properties"/>
+			</fileset>
+		</copy>
+
+		<!-- theatres-domain.jar -->
+		<jar jarfile="${weblib.dir}/${name}-domain.jar" compress="true">
+			<fileset dir="${src.dir}">
+				<include name="META-INF/orm.xml"/>
+				<include name="META-INF/persistence.xml"/>
+			</fileset>
+			<fileset dir="${build.dir}">
+				<include name="${domain.classes}"/>
+			</fileset>
+		</jar>
+
+		<!-- rest of Theatres classes -->
+		<jar jarfile="${weblib.dir}/${name}.jar" compress="true">
+			<fileset dir="${src.dir}">
+				<include name="META-INF/aop.xml"/>
+			</fileset>
+			<fileset dir="${build.dir}">
+				<include name="**/*"/>
+				<exclude name="${domain.classes}"/>
+			</fileset>
+		</jar>
+
+	</target>
+
+
+	<target name="docs" description="Create complete Javadoc documentation">
+
+		<delete dir="${docs.dir}"/>
+		<mkdir dir="${docs.dir}"/>
+
+		<javadoc executable="${javadoc.exe}" 
+		        sourcepath="${src.dir}" destdir="${docs.dir}" windowtitle="Theatres"
+				source="1.5" author="true" version="true" use="true" packagenames="*">
+			<doctitle><![CDATA[<h1>Theatres</h1>]]></doctitle>
+			<bottom><![CDATA[<i>Ken Krebs and Juergen Hoeller, 2003-2007.</i>]]></bottom>
+			<classpath refid="master-classpath"/>
+			<classpath refid="build-classpath"/>
+		</javadoc>
+
+	</target>
+
+	<target name="warfile" depends="build,docs" description="Build the web application archive">
+
+		<mkdir dir="${dist.dir}"/>
+
+		<war warfile="${dist.dir}/${name}.war" basedir="${war.dir}" webxml="${war.dir}/WEB-INF/web.xml">
+			<include name="*"/>
+			<include name="docs/**"/>
+			<include name="html/**"/>
+			<include name="styles/**"/>
+			<include name="images/**"/>
+			<include name="WEB-INF/*.*"/>
+			<exclude name="WEB-INF/web.xml"/>
+			<include name="WEB-INF/classes/*.*"/>
+			<include name="WEB-INF/lib/**"/>
+			<include name="WEB-INF/jsp/**"/>
+			<include name="WEB-INF/classes/META-INF/*"/>
+			<include name="META-INF/*"/>
+			<exclude name="**/.*"/>
+			<exclude name="WEB-INF/geronimo-web.xml"/>
+		</war>
+
+	</target>
+
+    <target name="deploywar" depends="warfile" description="Deploy application as a WAR file">
+        <copy todir="${deploy.path}" preservelastmodified="true">
+            <fileset dir="${dist.dir}">
+                <include name="*.war"/>
+            </fileset>
+        </copy>
+    </target>
+	
+
+	<!--
+		If you are going to deploy the application into Geronimo (or an application server
+		variant of Geronimo), run this target in preference to the plain 'warfile'.
+		This is required in order to avoid Geronimo class loading issues.
+	-->
+	<target name="warfile-geronimo" depends="build,docs" description="Build the web application archive packaged specifically for Geronimo">
+
+		<mkdir dir="${dist.dir}"/>
+
+		<war warfile="${dist.dir}/${name}.war" basedir="${war.dir}" webxml="${war.dir}/WEB-INF/web.xml">
+			<include name="*"/>
+			<include name="docs/**"/>
+			<include name="html/**"/>
+			<include name="styles/**"/>
+			<include name="images/**"/>
+			<include name="WEB-INF/*.*"/>
+			<exclude name="WEB-INF/web.xml"/>
+			<include name="WEB-INF/classes/*.*"/>
+			<include name="WEB-INF/lib/**"/>
+			<include name="WEB-INF/jsp/**"/>
+			<exclude name="**/.*"/>
+			<exclude name="WEB-INF/lib/commons-logging.jar"/>
+			<exclude name="WEB-INF/lib/cglib*.jar"/>
+		</war>
+
+	</target>
+
+
+	<target name="setupHSQL" description="Set up HSQL database properties" if="useHSQL">
+
+		<property name="db.driver" value="${hsql.driver}"/>
+		<property name="db.url" value="${hsql.url}"/>
+		<property name="db.user" value="${hsql.user}"/>
+		<property name="db.pw" value="${hsql.pw}"/>
+
+	</target>
+
+
+	<target name="setupMYSQL" description="Set up MYSQL database properties" if="useMYSQL">
+
+		<property name="db.driver" value="${mysql.driver}"/>
+		<property name="db.url" value="${mysql.url}"/>
+		<property name="db.user" value="${mysql.user}"/>
+		<property name="db.pw" value="${mysql.pw}"/>
+
+	</target>
+
+
+	<target name="setupDB" depends="setupHSQL,setupMYSQL" description="Initialize the selected database">
+
+		<ant antfile="${db.dir}/build.xml"/>
+
+	</target>
+
+
+	<target name="tests" depends="build,setupDB" description="Run tests using initialized database">
+
+		<delete dir="${testbuild.dir}"/>
+		<mkdir dir="${testbuild.dir}"/>
+		<delete dir="${testreports.dir}"/>
+		<mkdir dir="${testreports.dir}"/>
+		<delete dir="${testhtml.dir}"/>
+		<mkdir dir="${testhtml.dir}"/>
+
+		<javac srcdir="${testsrc.dir}" destdir="${testbuild.dir}" debug="true" deprecation="true">
+			<classpath path="${build.dir}"/>
+			<classpath refid="master-classpath"/>
+			<classpath refid="test-classpath"/>
+		</javac>
+
+		<copy todir="${testbuild.dir}" preservelastmodified="true">
+			<fileset dir="${src.dir}">
+				<include name="**/*.xml"/>
+				<include name="**/*.properties"/>
+			</fileset>
+			<fileset dir="${testsrc.dir}">
+				<include name="**/*.xml"/>
+				<include name="**/*.properties"/>
+			</fileset>
+		</copy>
+
+		<junit forkmode="perBatch" printsummary="true" haltonfailure="no" haltonerror="no">
+			<classpath path="${build.dir}"/>
+			<classpath path="${testbuild.dir}"/>
+			<classpath refid="master-classpath"/>
+			<classpath refid="test-classpath"/>
+
+			<!--
+				<formatter type="plain" usefile="false"/>
+			-->
+			<formatter type="xml"/>
+
+			<batchtest fork="yes" todir="${testreports.dir}">
+				<fileset dir="${testbuild.dir}">
+					<include name="**/*Tests.class"/>
+					<exclude name="**/Abstract*Tests.class"/>
+					<exclude name="**/*SuiteTests.class"/>
+				</fileset>
+			</batchtest>
+		</junit>
+
+		<junitreport todir="${testhtml.dir}">
+			<fileset dir="${testreports.dir}">
+				<include name="TEST-*.xml"/>
+			</fileset>
+			<report format="frames" todir="${testhtml.dir}"/>
+		</junitreport>
+
+		<!-- restore the database -->
+		<ant antfile="${db.dir}/build.xml"/>
+
+	</target>
+
+
+	<target name="all" depends="clean,build,docs,warfile,tests" description="Clean,build,docs,warfile,tests"/>
+
+</project>

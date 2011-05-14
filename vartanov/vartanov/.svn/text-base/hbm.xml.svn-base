@@ -1,0 +1,89 @@
+<hibernate-mapping>
+
+  <!-- Theatre -->
+  
+  <class name = "Theatre" table = "Theatres">
+    <id column = "id" name = "id" type = "java.lang.Integer">
+      <generator class = "increment"/>
+    </id>
+    <property column = "address" name = "address" type = "java.lang.String"/>
+    <property column = "title" name = "title" type = "java.lang.String"/>
+  </class>
+  
+  <!-- Person -->
+  
+  <class name = "Person" table = "Persons">
+    <id column = "id" name = "id" type = "java.lang.Integer">
+      <generator class = "increment"/>
+    </id>
+    <property column = "firstName" name = "firstName" type = "java.lang.String"/>
+    <property column = "secondName" name = "secondName" type = "java.lang.String"/>
+  </class>
+  
+  <!-- Role -->
+  
+  <class name = "Role" table = "Roles">
+    <id column = "id" name = "id" type = "java.lang.Integer">
+      <generator class = "increment"/>
+    </id>
+	<property column = "actor" name = "actor" type = "java.lang.Integer"/>
+	<property column = "performance" name = "performance" type = "java.lang.Integer"/>
+   </class>
+  
+  <!-- Cost -->
+  
+  <class name = "Cost" table = "Costs">
+    <id column = "id" name = "id" type = "java.lang.Integer">
+      <generator class = "increment"/>
+    </id>
+    <property column = "type" name = "type" type = "placeType"/>
+	<property column = "theatre" name = "theatre" type = "java.lang.Integer"/>
+ 	<property column = "date" name = "date" type = "java.sql.Date"/>
+  </class>
+  
+  <!-- Performance -->
+  
+  <class name = "Performance" table = "Performances">
+    <id column = "id" name = "id" type = "java.lang.Integer">
+      <generator class = "increment"/>
+    </id>
+    <property column = "title" name = "title" type = "java.lang.String"/>
+	<property column = "director" name = "director" type = "java.lang.Integer"/>
+ 	<property column = "theatre" name = "theatre" type = "java.lang.Integer"/>
+     <property column = "duration" name = "duration" type = "java.lang.Integer"/>
+  </class>
+  
+  <!-- Show -->
+  
+  <class name = "Show" table = "Show">
+    <id column = "id" name = "id" type = "java.lang.Integer">
+      <generator class = "increment"/>
+    </id>
+	<property column = "performance" name = "performance" type = "java.lang.Integer"/>
+ 	<property column = "date" name = "date" type = "java.sql.Date"/>
+  </class>
+  
+  <!-- Place -->
+  
+  <class name = "Place" table = "Places">
+    <id column = "id" name = "id" type = "java.lang.Integer">
+      <generator class = "increment"/>
+    </id>
+    <property column = "row" name = "row" type = "java.lang.Integer"/>
+    <property column = "number" name = "number" type = "java.lang.Integer"/>
+    <property column = "type" name = "type" type = "placeType"/>
+	<property column = "theatre" name = "theatre" type = "java.lang.Integer"/>
+  </class>
+  
+  <!-- Occupied -->
+  
+  <class name = "Occupied" table = "Occupied">
+    <id column = "id" name = "id" type = "java.lang.Integer">
+      <generator class = "increment"/>
+    </id>
+	<property column = "place" name = "place" type = "java.lang.Integer"/>
+	<property column = "show" name = "show" type = "java.lang.Integer"/>
+    <property column = "isOccupied" name = "isOccupied" type = "java.lang.Boolean"/>
+  </class>
+  
+</hibernate-mapping>

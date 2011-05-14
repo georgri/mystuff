@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/4217/wtprac-2011/vartanov/SpringSource%20Tool%20Suite%20project/Theatre/src/main/java/a/b/c/domain
+END
+Show.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/4217/wtprac-2011/vartanov/SpringSource%20Tool%20Suite%20project/Theatre/src/main/java/a/b/c/domain/Show.java
+END
+Performance.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/4217/wtprac-2011/vartanov/SpringSource%20Tool%20Suite%20project/Theatre/src/main/java/a/b/c/domain/Performance.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/4217/wtprac-2011/vartanov/SpringSource%20Tool%20Suite%20project/Theatre/src/main/java/a/b/c/domain/Role.java
+END
+Place.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/4217/wtprac-2011/vartanov/SpringSource%20Tool%20Suite%20project/Theatre/src/main/java/a/b/c/domain/Place.java
+END
+ITheatre.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/4217/wtprac-2011/vartanov/SpringSource%20Tool%20Suite%20project/Theatre/src/main/java/a/b/c/domain/ITheatre.java
+END
+Person.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/4217/wtprac-2011/vartanov/SpringSource%20Tool%20Suite%20project/Theatre/src/main/java/a/b/c/domain/Person.java
+END
+PlaceType.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/4217/wtprac-2011/vartanov/SpringSource%20Tool%20Suite%20project/Theatre/src/main/java/a/b/c/domain/PlaceType.java
+END
+Cost.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/4217/wtprac-2011/vartanov/SpringSource%20Tool%20Suite%20project/Theatre/src/main/java/a/b/c/domain/Cost.java
+END
+Registration.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/4217/wtprac-2011/vartanov/SpringSource%20Tool%20Suite%20project/Theatre/src/main/java/a/b/c/domain/Registration.java
+END
+Occupied.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/4217/wtprac-2011/vartanov/SpringSource%20Tool%20Suite%20project/Theatre/src/main/java/a/b/c/domain/Occupied.java
+END
+Theatre.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/4217/wtprac-2011/vartanov/SpringSource%20Tool%20Suite%20project/Theatre/src/main/java/a/b/c/domain/Theatre.java
+END

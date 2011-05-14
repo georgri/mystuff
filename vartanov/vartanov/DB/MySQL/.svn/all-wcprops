@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/3829/wtprac-2011/vartanov/DB/MySQL
+END
+createDB.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/3829/wtprac-2011/vartanov/DB/MySQL/createDB.txt
+END
+initDB.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/3829/wtprac-2011/vartanov/DB/MySQL/initDB.txt
+END
+dropDB.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/3829/wtprac-2011/vartanov/DB/MySQL/dropDB.txt
+END

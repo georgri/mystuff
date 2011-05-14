@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   id="svg3233"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.0 r9654"
+   version="1.0"
+   sodipodi:docname="Navigation.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="C:\Documents and Settings\student\Мои документы\Downloads\Navigation.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs3235">
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;">
+      <path
+         id="path3880"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3241" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8546761"
+     inkscape:cx="579.9429"
+     inkscape:cy="386.05934"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="968"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3243"
+       visible="true"
+       enabled="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3238">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.08176196;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect9509"
+       width="1100.0219"
+       height="760.02722"
+       x="-140"
+       y="-15.905518"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="674.09448"
+       id="text5726"><tspan
+         sodipodi:role="line"
+         id="tspan5728"
+         x="690"
+         y="674.09448">свободные места</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3245"
+       width="160"
+       height="200"
+       x="60"
+       y="64.094482" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3247"
+       width="120"
+       height="60"
+       x="380"
+       y="64.094482" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3249"
+       width="120"
+       height="60"
+       x="560"
+       y="64.094482" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3251"
+       width="120"
+       height="140"
+       x="380"
+       y="184.09448" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3253"
+       width="120"
+       height="140"
+       x="680"
+       y="184.09448" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect3255"
+       width="160"
+       height="99.5"
+       x="60"
+       y="444.09448" />
+    <text
+       xml:space="preserve"
+       style="font-size:10;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="70"
+       y="54.094482"
+       id="text3257"><tspan
+         sodipodi:role="line"
+         id="tspan3259"
+         x="70"
+         y="54.094482">Главная</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="390"
+       y="54.094482"
+       id="text3261"><tspan
+         sodipodi:role="line"
+         id="tspan3263"
+         x="390"
+         y="54.094482">Авторизация</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="570"
+       y="54.094482"
+       id="text3265"><tspan
+         sodipodi:role="line"
+         id="tspan3267"
+         x="570"
+         y="54.094482">Регистрация</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="390"
+       y="174.09448"
+       id="text3269"><tspan
+         sodipodi:role="line"
+         id="tspan3271"
+         x="390"
+         y="174.09448">Список театров</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="164.09448"
+       id="text3273"><tspan
+         sodipodi:role="line"
+         id="tspan3275"
+         x="690"
+         y="164.09448">Список</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="70"
+       y="434.09448"
+       id="text3277"><tspan
+         sodipodi:role="line"
+         id="tspan3279"
+         x="70"
+         y="434.09448">Покупка билета</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="170"
+       y="79.094482"
+       id="text3281"><tspan
+         sodipodi:role="line"
+         id="tspan3283"
+         x="170"
+         y="79.094482">войти</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="170"
+       y="89.094482"
+       id="text3285"><tspan
+         sodipodi:role="line"
+         id="tspan3287"
+         x="170"
+         y="89.094482">зарег.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="70"
+       y="119.09448"
+       id="text3289"><tspan
+         sodipodi:role="line"
+         id="tspan3291"
+         x="70"
+         y="119.09448">список</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="110"
+       y="119.09448"
+       id="text3293"><tspan
+         sodipodi:role="line"
+         id="tspan3295"
+         x="110"
+         y="119.09448">театров</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="110"
+       y="129.09448"
+       id="text3297"><tspan
+         sodipodi:role="line"
+         id="tspan3299"
+         x="110"
+         y="129.09448">представлений</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="235"
+       y="119.09448"
+       id="text3301"><tspan
+         sodipodi:role="line"
+         id="tspan3303"
+         x="235"
+         y="119.09448">по</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="305"
+       y="244.09448"
+       id="text3305"><tspan
+         sodipodi:role="line"
+         id="tspan3307"
+         x="305"
+         y="244.09448">актёрам</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="305"
+       y="254.09448"
+       id="text3309"><tspan
+         sodipodi:role="line"
+         id="tspan3311"
+         x="305"
+         y="254.09448">режиссёру</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="490"
+       y="359.09448"
+       id="text3313"><tspan
+         sodipodi:role="line"
+         id="tspan3315"
+         x="490"
+         y="359.09448">по</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="575"
+       y="289.09448"
+       id="text3317"><tspan
+         sodipodi:role="line"
+         id="tspan3319"
+         x="575"
+         y="289.09448">театру</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="575"
+       y="299.09448"
+       id="text3321"><tspan
+         sodipodi:role="line"
+         id="tspan3323"
+         x="575"
+         y="299.09448">режиссёру</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="575"
+       y="309.09448"
+       id="text3325"><tspan
+         sodipodi:role="line"
+         id="tspan3327"
+         x="575"
+         y="309.09448">актёрам</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="575"
+       y="319.09448"
+       id="text3329"><tspan
+         sodipodi:role="line"
+         id="tspan3331"
+         x="575"
+         y="319.09448">датам</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="199.09448"
+       id="text3333"><tspan
+         sodipodi:role="line"
+         id="tspan3335"
+         x="690"
+         y="199.09448">представление</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="390"
+       y="199.09448"
+       id="text3341"><tspan
+         sodipodi:role="line"
+         id="tspan3343"
+         x="390"
+         y="199.09448">театр</tspan></text>
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 150,119.09448 L 230,119.09448"
+       id="path3349" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 250,119.09448 C 285,119.09448 265,244.09448 300,244.09448"
+       id="path3860"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 250,119.09448 C 285,119.09448 265,254.09448 300,254.09448"
+       id="path3862"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;marker-end:url(#Arrow1Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 350,244.09448 L 380,244.09448"
+       id="path3864" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;marker-end:url(#Arrow1Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 360,254.09448 L 380,254.09448"
+       id="path3866" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 570,289.09448 C 535,289.09448 540,359.09448 505,359.09448 C 540,359.09448 535,299.09448 570,299.09448"
+       id="path4646"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 570,309.09448 C 535,309.09448 540,359.09448 505,359.09448 C 540,359.09448 525,319.09448 570,319.09448"
+       id="path4648"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 185,129.09448 C 351.58936,129.09448 50.107821,359.09448 485,359.09448"
+       id="path4650"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;marker-end:url(#Arrow1Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 610,319.09448 L 680,319.09448"
+       id="path4658"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 465,459.09448 C 525,459.09448 570,319.09448 680,319.09448"
+       id="path4660"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 200,79.094482 C 235,79.094482 345,79.094482 380,79.094482"
+       id="path4670"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 200,89.094482 C 290,89.094482 340,139.09448 445,139.09448 C 550,139.09448 510,114.09448 560,114.09448"
+       id="path5187"
+       sodipodi:nodetypes="czc" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 380,69.094482 L 220,69.094482"
+       id="path5189" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 565,64.094482 C 530,34.094482 260,9.0944824 215,64.094482"
+       id="path5191" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect5710"
+       width="120"
+       height="89.787773"
+       x="680"
+       y="613.8067" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="684.09448"
+       id="text5730"><tspan
+         sodipodi:role="line"
+         id="tspan5732"
+         x="690"
+         y="684.09448">стоимость</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="150"
+       y="534.09448"
+       id="text5754"><tspan
+         sodipodi:role="line"
+         id="tspan5756"
+         x="150"
+         y="534.09448">купить билет</tspan></text>
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-mid:none;marker-end:url(#Arrow1Mend)"
+       d="M 215,534.09448 C 250,534.09448 300,514.09448 290,419.09448 C 280,324.09448 220,304.09448 185,264.09448"
+       id="path5758"
+       sodipodi:nodetypes="csc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="390"
+       y="79.094482"
+       id="text6790"><tspan
+         sodipodi:role="line"
+         id="tspan6792"
+         x="390"
+         y="79.094482">имя</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="390"
+       y="89.094482"
+       id="text6794"><tspan
+         sodipodi:role="line"
+         id="tspan6796"
+         x="390"
+         y="89.094482">пароль</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect6802"
+       width="60"
+       height="5"
+       x="430"
+       y="74.094482" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect6806"
+       width="60"
+       height="5"
+       x="430"
+       y="84.094482" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="570"
+       y="79.094482"
+       id="text6808"><tspan
+         sodipodi:role="line"
+         id="tspan6810"
+         x="570"
+         y="79.094482">имя</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="570"
+       y="99.094482"
+       id="text6812"><tspan
+         sodipodi:role="line"
+         id="tspan6814"
+         x="570"
+         y="99.094482">пароль</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="570"
+       y="89.094482"
+       id="text6816"><tspan
+         sodipodi:role="line"
+         id="tspan6818"
+         x="570"
+         y="89.094482">почта</tspan></text>
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect6820"
+       width="60"
+       height="5"
+       x="610"
+       y="74.094482" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect6822"
+       width="60"
+       height="5"
+       x="610"
+       y="84.094482" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect6824"
+       width="60"
+       height="5"
+       x="610"
+       y="94.094482" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 685,679.09448 C 375,679.09448 320,449.09448 220,449.09448"
+       id="path6830"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect7347"
+       width="120"
+       height="140"
+       x="680"
+       y="404.09448" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect7349"
+       width="120"
+       height="140"
+       x="380"
+       y="404.09448" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="400"
+       y="394.09448"
+       id="text7351"><tspan
+         sodipodi:role="line"
+         id="tspan7353"
+         x="400"
+         y="394.09448">Театр</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="394.09448"
+       id="text7355"><tspan
+         sodipodi:role="line"
+         id="tspan7357"
+         x="690"
+         y="394.09448">Представление</tspan></text>
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 765,199.09448 C 960,199.09448 960,409.09448 800,409.09448"
+       id="path7359"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 390,204.09448 C 390,239.09448 390,364.09448 390,404.09448"
+       id="path7876"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="395"
+       y="209.09448"
+       id="text8417"><tspan
+         sodipodi:role="line"
+         id="tspan8419"
+         x="395"
+         y="209.09448">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="209.09448"
+       id="text8425"><tspan
+         sodipodi:role="line"
+         id="tspan8427"
+         x="690"
+         y="209.09448">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="419.09448"
+       id="text8429"><tspan
+         sodipodi:role="line"
+         id="tspan8431"
+         x="690"
+         y="419.09448">театр</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="429.09448"
+       id="text8433"><tspan
+         sodipodi:role="line"
+         id="tspan8435"
+         x="690"
+         y="429.09448">режиссёр</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="439.09448"
+       id="text8437"><tspan
+         sodipodi:role="line"
+         id="tspan8439"
+         x="690"
+         y="439.09448">актёры</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="449.09448"
+       id="text8441"><tspan
+         sodipodi:role="line"
+         id="tspan8443"
+         x="690"
+         y="449.09448">даты и время</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="459.09448"
+       id="text8445"><tspan
+         sodipodi:role="line"
+         id="tspan8447"
+         x="690"
+         y="459.09448">продолжительность</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="469.09448"
+       id="text8449"><tspan
+         sodipodi:role="line"
+         id="tspan8451"
+         x="690"
+         y="469.09448">места, стоимость</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="390"
+       y="419.09448"
+       id="text8453"><tspan
+         sodipodi:role="line"
+         id="tspan8455"
+         x="390"
+         y="419.09448">режиссёры</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="390"
+       y="429.09448"
+       id="text8457"><tspan
+         sodipodi:role="line"
+         id="tspan8459"
+         x="390"
+         y="429.09448">актёры</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="390"
+       y="439.09448"
+       id="text8461"><tspan
+         sodipodi:role="line"
+         id="tspan8463"
+         x="390"
+         y="439.09448">адрес</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="390"
+       y="449.09448"
+       id="text8465"><tspan
+         sodipodi:role="line"
+         id="tspan8467"
+         x="390"
+         y="449.09448">кол-во мест</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="390"
+       y="459.09448"
+       id="text8469"><tspan
+         sodipodi:role="line"
+         id="tspan8471"
+         x="390"
+         y="459.09448">представления</tspan></text>
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 685,419.09448 L 500,419.09448"
+       id="path8988" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 445,419.09448 c 100,0 25,-120 125,-120"
+       id="path9505"
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 430,429.09448 c 110,0 40,-120 140,-120"
+       id="path9507"
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 445,419.09448 C 480,419.09448 480,359.09448 480,324.09448"
+       id="path9515" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 430,429.09448 C 485,429.09448 480,359.09448 480,324.09448"
+       id="path9517"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 610,289.09448 C 660,289.09448 645,319.09448 680,319.09448"
+       id="path10034"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 625,299.09448 C 650,299.09448 645,319.09448 680,319.09448"
+       id="path10036"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 620,309.09448 C 655,309.09448 645,319.09448 680,319.09448"
+       id="path10038" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 685,429.09448 C 635,429.09448 630,319.09448 680,319.09448"
+       id="path10040" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 685,439.09448 C 625,439.09448 620,319.09448 680,319.09448"
+       id="path10042"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 685,429.09448 C 585,429.09448 480,424.09448 480,324.09448"
+       id="path10044" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 685,439.09448 C 585,439.09448 480,424.09448 480,324.09448"
+       id="path10046" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 760,449.09448 C 900,449.09448 900,619.09448 800,619.09448"
+       id="path10048"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="604.09448"
+       id="text10565"><tspan
+         sodipodi:role="line"
+         id="tspan10567"
+         x="690"
+         y="604.09448">Сеанс</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="174.09448"
+       id="text10569"><tspan
+         sodipodi:role="line"
+         id="tspan10571"
+         x="690"
+         y="174.09448">представлений</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="629.09448"
+       id="text10573"><tspan
+         sodipodi:role="line"
+         id="tspan10575"
+         x="690"
+         y="629.09448">представление</tspan></text>
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 685,629.09448 C 610,629.09448 610,539.09448 680,539.09448"
+       id="path10577"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 685,669.09448 L 685,684.09448"
+       id="path11094" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="654.09448"
+       id="text11096"><tspan
+         sodipodi:role="line"
+         x="690"
+         y="654.09448"
+         id="tspan11100">театр</tspan></text>
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 685,654.09448 C 600,654.09448 585,539.09448 500,539.09448"
+       id="path11104"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="70"
+       y="464.09448"
+       id="text11621"><tspan
+         sodipodi:role="line"
+         id="tspan11623"
+         x="70"
+         y="464.09448">сеанс</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="70"
+       y="484.09448"
+       id="text11625"><tspan
+         sodipodi:role="line"
+         id="tspan11627"
+         x="70"
+         y="484.09448">выбранные места</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="70"
+       y="494.09448"
+       id="text11629"><tspan
+         sodipodi:role="line"
+         id="tspan11631"
+         x="70"
+         y="494.09448">стоимость</tspan></text>
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 105,464.09448 C 330,464.09448 335,699.09448 680,699.09448"
+       id="path11633"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="690"
+       y="639.09448"
+       id="text12150"><tspan
+         sodipodi:role="line"
+         id="tspan12152"
+         x="690"
+         y="639.09448">дата, время</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="85"
+       y="174.09448"
+       id="text3311"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3313"
+         x="85"
+         y="174.09448">редактировать</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="125"
+       y="184.09448"
+       id="text3315"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3317"
+         x="125"
+         y="184.09448">театр</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="125"
+       y="194.09448"
+       id="text3319"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3321"
+         x="125"
+         y="194.09448">представление</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3251-1"
+       width="120"
+       height="140"
+       x="-90"
+       y="64.094482" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect3251-7"
+       width="120"
+       height="140"
+       x="-90"
+       y="254.09448" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-85"
+       y="54.094482"
+       id="text3348"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3350"
+         x="-85"
+         y="54.094482"
+         style="font-size:10px">Редактор театров</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-85"
+       y="234.09448"
+       id="text3356"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3358"
+         x="-85"
+         y="234.09448">Редактор</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-85"
+       y="244.09448"
+       id="text3360"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3362"
+         x="-85"
+         y="244.09448">представлений</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 120,184.09448 -90,0"
+       id="path3364"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 120,194.09448 c -35,0 -55,85 -90,85"
+       id="path4322"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <rect
+       id="rect4506"
+       width="130"
+       height="45"
+       x="75"
+       y="159.09448"
+       style="fill:none;stroke:#000000;stroke-width:1.01980388;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="75"
+       y="154.09448"
+       id="text4508"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4510"
+         x="75"
+         y="154.09448"
+         style="font-size:10px">[вход под администратором]</tspan></text>
+  </g>
+</svg>

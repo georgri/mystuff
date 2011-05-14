@@ -1,0 +1,3 @@
+CREATE DATABASE theatres;
+
+GRANT ALL PRIVILEGES ON theatres.* TO th@localhost IDENTIFIED BY 'th';

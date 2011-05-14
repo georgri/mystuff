@@ -1,0 +1,62 @@
+USE theatres;
+
+CREATE TABLE 'Theatre' 
+(
+    'id' INT (11) NOT NULL AUTO_INCREMENT,
+    'address' TEXT NOT NULL,
+    'title' TEXT NOT NULL,
+    PRIMARY KEY ('id')
+) engine=InnoDB;				
+
+CREATE TABLE 'Performance' 
+(
+    'id' INT (11) NOT NULL AUTO_INCREMENT,
+    'title' TEXT NOT NULL,
+    'director' INT (11) NOT NULL,
+    'theatre' INT (11) NOT NULL,
+    'duration' INT (11) NOT NULL,
+    PRIMARY KEY ('id')
+) engine=InnoDB;				
+
+CREATE TABLE 'Show' 
+(
+    'id' INT (11) NOT NULL AUTO_INCREMENT,
+    'performance' INT (11) NOT NULL,
+    'date' DATETIME,
+    PRIMARY KEY ('id')
+) engine=InnoDB;
+
+CREATE TABLE 'Place' 
+(
+    'row' INT (11) NOT NULL,
+    'number' INT (11) NOT NULL,
+    'type' ENUM ('stalls', 'balcony', 'dress circle') NOT NULL,
+    'theatre' INT (11) NOT NULL,
+    'isFree' ENUM ('free', 'occupied'),
+    PRIMARY KEY ('row', 'number')
+) engine=InnoDB;				
+
+CREATE TABLE 'Person' 
+(
+    'id' INT (11) NOT NULL,
+    'firstName' TEXT NOT NULL,
+    'lastName' TEXT,
+    PRIMARY KEY ('id')
+) engine=InnoDB;				
+
+CREATE TABLE 'Role' 
+(
+    'id' INT (11) NOT NULL,
+    'actor' INT (11) NOT NULL,
+    'performance' INT (11) NOT NULL,
+    PRIMARY KEY ('id')
+) engine=InnoDB;				
+
+CREATE TABLE 'Cost' 
+(
+    'id' INT (11) NOT NULL,
+    'type' ENUM ('stalls', 'balcony', 'dress circle') NOT NULL,
+    'theatre' INT (11) NOT NULL,
+    date DATETIME NOT NULL,
+    PRIMARY KEY ('id')
+) engine=InnoDB;				

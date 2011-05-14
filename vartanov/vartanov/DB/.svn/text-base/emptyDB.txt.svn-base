@@ -1,0 +1,8 @@
+DELETE FROM Persons;
+DELETE FROM Roles;
+DELETE FROM Costs;
+DELETE FROM Theatre;
+DELETE FROM Performance;
+DELETE FROM Show;
+DELETE FROM Places;
+DELETE FROM Occupied;
